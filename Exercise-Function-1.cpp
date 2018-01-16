@@ -1,10 +1,12 @@
 #include <iostream>
+using namespace std;
 
-
+void masuk_tak();
 
 int main()
-{
 
+{
+   masuk_tak();
 }
 
 void masuk_tak()
@@ -15,18 +17,18 @@ void masuk_tak()
 	
 
 	ans=' ';
-	while(c!='y' and c!='y'){
+	while(ans!='y' && ans!='y')
+		{
 		cin>>ans;
-		if(c!='n' and c!='n')
+		if(ans!='n' && ans!='n')
 		cout<<endl<<"cakap lah bebetul, try again: "<<endl;
 		}
 
-	if(c=='n')
+	if(ans=='n')
 	{
 		cout<<endl<<"the fudge?!";
 		masuk_tak();
 	}
 	cout<<endl<<"chantek!"<<endl;
 }
-
 
